@@ -54,7 +54,7 @@ int add(int &a, int &b):
 
 ## Usage:
 
-`g++ -03 cpp_doc.cpp`
+`g++ -O3 cpp_doc.cpp`
 
 And then...
 
