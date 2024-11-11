@@ -40,17 +40,17 @@ int add(int &a, int &b):
     return a + b;
 </code>
 
-`T` stands for Title
+**T**  stands for Title
 
-`U` stands for usage (shows function and its parameters)
+**U**  stands for usage (shows function and its parameters)
 
-`D` stands for description (output paragraph of description)
+**D**  stands for description (output paragraph of description)
 
-`A` stands for arguments (output table of args | definition)
+**A**  stands for arguments (output table of args | definition)
 
-`E` stands for example (output code example within <ode tag)
+**E**  stands for example (output code example within <ode tag)
 
-`X` must be put at the end of arguments and examples block
+**X**  must be put at the end of arguments and examples block
 
 ## Usage:
 
