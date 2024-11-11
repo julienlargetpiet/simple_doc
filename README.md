@@ -23,18 +23,18 @@ add(a, b):
     return a + b
 </code>
 
-As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//`, the following will work.
+As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
 <code>
-##@T Add
-##@U Description paragraph1
-##@D Description paragraph2
-##@A x : first int number to add
-##@A y : second iint number to add
-##@X
-##@E add(3, 4)
-##@E 7
-##@X
+//@T Add
+//@U Description paragraph1
+//@D Description paragraph2
+//@A x : first int number to add
+//@A y : second iint number to add
+//@X
+//@E add(3, 4)
+//@E 7
+//@X
 
 int add(int &a, int &b):
     return a + b;
