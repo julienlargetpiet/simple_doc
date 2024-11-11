@@ -40,6 +40,17 @@ int add(int &a, int &b):
     return a + b;
 </code>
 
+`T` stands for Title
+
+`U` stands for usage (shows function and its parameters)
+
+`D` stands for description (output paragraph of description)
+
+`A` stands for arguments (output table of args | definition)
+
+`E` stands for example (output code example within <ode tag)
+
+`X` must be put at the end of arguments and examples block
 
 ## Usage:
 
