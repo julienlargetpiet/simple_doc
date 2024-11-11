@@ -51,7 +51,7 @@ int main() {
           outfile << cur_doc << "</p>\n";
         } else if (currow[3] == 'A') {
           if (!A) {
-            outfile << "<h2>#Arguments</h2><table>\n";
+            outfile << "<h2>#Arguments</h2><table><tr><th>Name</th><th>Definition</th></tr>\n";
             A = 1;
           };
           cur_doc = "<tr><th>";
