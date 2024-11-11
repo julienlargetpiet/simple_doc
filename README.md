@@ -8,10 +8,10 @@ C++ programm to generate a html page for functions documentation.
 
 Let's consider the file `code.py`:
 
-`
+<code>
 ##@T Add
 ##@U Description paragraph1
-##@D Description paragraph2 <img src = "...">
+##@D Description paragraph2
 ##@A x : first number to add
 ##@A y : second number to add
 ##@X
@@ -20,7 +20,8 @@ Let's consider the file `code.py`:
 ##@X
 
 add(a, b):
-    return a + b`
+    return a + b
+</code>
 
 ## Usage:
 
