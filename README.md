@@ -66,4 +66,9 @@ And then...
 
 That's all.
 
+# Use it conveniently with shell
+
+In `.bash_aliases`.
+
+`alias docu="./path_to_compiled_programm/a.out"`
 
