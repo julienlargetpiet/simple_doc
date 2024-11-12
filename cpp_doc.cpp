@@ -27,61 +27,67 @@ int main() {
     if (n > 3) {
       if (currow[2] == '@') {
         if (currow[3] == 'T') {
-          cur_doc = "<h1>";
-          for (i = 4; i < n; ++i) {
-            cur_doc += currow[i];
-          };
-          outfile << cur_doc << "</h1><br>\n";
-        } else if (currow[3] == 'U') {
-          cur_doc = "<h2>#Usage</h2><code>";
-          for (i = 4; i < n; ++i) {
-            cur_doc += currow[i];
-          };
-          outfile << cur_doc << "</code><br>\n";
-        } else if (currow[3] == 'D') {
-          if (!D) {
-            D = 1;
-            cur_doc = "<h2>#Description</h2><p>";
-          } else {
-            cur_doc = "<p>";
-          };
-          for (i = 4; i < n; ++i) {
-            cur_doc += currow[i];
-          };
-          outfile << cur_doc << "</p>\n";
-        } else if (currow[3] == 'A') {
-          if (!A) {
-            outfile << "<h2>#Arguments</h2><table><tr><th>Name</th><th>Definition</th></tr>\n";
-            A = 1;
-          };
-          cur_doc = "<tr><th>";
-          for (i = 4; i < n; ++i) {
-            if (currow[i] == ':') {
-              cur_doc += "</th><th>";
-            } else {
+            cur_doc = "<h2>";
+            for (i = 4; i < n; ++i) {
               cur_doc += currow[i];
             };
-          };
-          outfile << cur_doc << "</th></tr>\n";
+            outfile << cur_doc << "</h2><br>\n";
+        } else if (currow[3] == 'U') {
+            cur_doc = "<h3>#Usage</h3><code>";
+            for (i = 4; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+          outfile << cur_doc << "</code><br>\n";
+        } else if (currow[3] == 'D') {
+            if (!D) {
+              D = 1;
+              cur_doc = "<h3>#Description</h3><p>";
+            } else {
+              cur_doc = "<p>";
+            };
+            for (i = 4; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+            outfile << cur_doc << "</p>\n";
+        } else if (currow[3] == 'A') {
+            if (!A) {
+              outfile << "<h3>#Arguments</h3><table><tr><th>Name</th><th>Definition</th></tr>\n";
+              A = 1;
+            };
+            cur_doc = "<tr><th>";
+            for (i = 4; i < n; ++i) {
+              if (currow[i] == ':') {
+                cur_doc += "</th><th>";
+              } else {
+                cur_doc += currow[i];
+              };
+            };
+            outfile << cur_doc << "</th></tr>\n";
         } else if (currow[3] == 'E') {
-          if (!E) {
-            cur_doc = "<h2>#Example(s)</h2><code>";
-            E = 1;
-          } else {
-            cur_doc = "";
-          };
-          for (i = 4; i < n; ++i) {
-            cur_doc += currow[i];
-          };
-          outfile << cur_doc << "<br>\n";
+            if (!E) {
+              cur_doc = "<h3>#Example(s)</h3><code>";
+              E = 1;
+            } else {
+              cur_doc = "";
+            };
+            for (i = 4; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+            outfile << cur_doc << "<br>\n";
         } else if (currow[3] == 'X') {
-          if (A) {
-            outfile << "</table><br>\n";
-            A = 0;
-          } else if (E) {
-            outfile << "</code><br>\n"; 
-            E = 0;
-          };
+            if (A) {
+              outfile << "</table><br>\n";
+              A = 0;
+            } else if (E) {
+              outfile << "</code><br>\n"; 
+              E = 0;
+            };
+        } else if (currow[3] == 'L') {
+            cur_doc = "<h1>";
+            for (i = 4; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+            outfile << cur_doc << "</h1>\n";
         };
       };
     };
