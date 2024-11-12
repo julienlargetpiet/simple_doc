@@ -31,7 +31,7 @@ int main() {
             for (i = 4; i < n; ++i) {
               cur_doc += currow[i];
             };
-            outfile << cur_doc << "</h2><br>\n";
+            outfile << cur_doc << "</h2>\n";
         } else if (currow[3] == 'U') {
             cur_doc = "<h3>#Usage</h3><code>";
             for (i = 4; i < n; ++i) {
