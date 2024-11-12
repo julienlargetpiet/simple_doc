@@ -26,7 +26,7 @@ add(a, b):
 As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
 ```
-//@L Functions
+//@L1 Functions
 //@T Add
 //@U Description paragraph1
 //@D Description paragraph2
@@ -53,7 +53,15 @@ int add(int &a, int &b):
 
 **X**  must be put at the end of arguments and examples block
 
-**L** stands for Line (output h1 content line)
+**LNumber** stands for Line (output hNumber tag line) Number stands for the depth level in the table of contents
+
+**JNumber** stands for Jump (switch to hNumber tag) Number stands for the depth level in the table of contents
+
+## Example
+
+This repo provides a test file `test_doc.cpp` where you can find an example of how documentation is made inside a code file. 
+
+Also, you can run the programm on this file to see the output as `out.html` file.
 
 ## Usage:
 
