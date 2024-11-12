@@ -25,7 +25,7 @@ add(a, b):
 
 As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
-<code>
+```
 //@L Functions
 //@T Add
 //@U Description paragraph1
@@ -39,7 +39,7 @@ As you see, you must begin documentation with 2 comments characters. If it was w
 
 int add(int &a, int &b):
     return a + b;
-</code>
+```
 
 **T**  stands for Title
 
