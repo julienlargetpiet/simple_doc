@@ -10,7 +10,9 @@ int main() {
   std::cin >> logo;
   std::fstream myfile(file);
   std::fstream outfile("out.html", std::ios::out);
-  outfile << "<!DOCTYPE html>\n<head>\n<title>Documentation</title>\n</head>\n";
+  outfile << "<!DOCTYPE html>\n<head>\n<title>Documentation</title>\n";
+  outfile << "<style>table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; }\n td, th { border: 1px solid #dddddd; text-algn: left; padding: 8px; }\n code { font-family: Consolas, \"courrier new\"; color: #2555C8; padding: 2px; }\n </style>\n";
+  outfile << "</head>\n";
   outfile << "<body>\n";
   if (logo.length() > 0) {
     outfile << "<img src =\"" << logo << "\" width=250 height=100>\n";
