@@ -8,7 +8,7 @@ C++ programm to generate a html page for functions documentation.
 
 Let's consider the file `code.py`:
 
-<code>
+```
 ##@T Add
 ##@U Description paragraph1
 ##@D Description paragraph2
@@ -21,7 +21,7 @@ Let's consider the file `code.py`:
 
 add(a, b):
     return a + b
-</code>
+```
 
 As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
