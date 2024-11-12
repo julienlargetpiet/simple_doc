@@ -11,7 +11,7 @@ int main() {
   std::fstream myfile(file);
   std::fstream outfile("out.html", std::ios::out);
   outfile << "<!DOCTYPE html>\n<head>\n<title>Documentation</title>\n";
-  outfile << "<style>table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; }\n td, th { border: 1px solid #dddddd; text-algn: left; padding: 8px; }\n code { font-family: Consolas, \"courrier new\"; color: #2555C8; padding: 2px; }\n </style>\n";
+  outfile << "<style>table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; }\n td, th { border: 1px solid #dddddd; text-algn: left; padding: 8px; }\n code { font-family: Consolas, \"courrier new\"; color: #2555C8; padding: 2px; }\n div.Div { border: 1px solid black; background-color: #f1f1f1; text-align: left; max-width: 500px; margin-left: 20px; }\n </style>\n";
   outfile << "</head>\n";
   outfile << "<body>\n";
   if (logo.length() > 0) {
@@ -35,11 +35,11 @@ int main() {
             };
             outfile << cur_doc << "</h2>\n";
         } else if (currow[3] == 'U') {
-            cur_doc = "<h3>#Usage</h3>\n<code>";
+            cur_doc = "<h3>#Usage</h3>\n<div class=\"Div\"><code>";
             for (i = 4; i < n; ++i) {
               cur_doc += currow[i];
             };
-          outfile << cur_doc << "</code><br>\n";
+          outfile << cur_doc << "</code></div><br>\n";
         } else if (currow[3] == 'D') {
             if (!D) {
               D = 1;
@@ -68,21 +68,21 @@ int main() {
             outfile << cur_doc << "</th></tr>\n";
         } else if (currow[3] == 'E') {
             if (!E) {
-              cur_doc = "<h3>#Example(s)</h3>\n<code>";
+              cur_doc = "<h3>#Example(s)</h3>\n<div class = \"Div\"><code>";
               E = 1;
             } else {
-              cur_doc = "";
+              cur_doc = "<br><code>";
             };
             for (i = 4; i < n; ++i) {
               cur_doc += currow[i];
             };
-            outfile << cur_doc << "<br>\n";
+            outfile << cur_doc << "</code>\n";
         } else if (currow[3] == 'X') {
             if (A) {
               outfile << "</table><br>\n";
               A = 0;
             } else if (E) {
-              outfile << "</code><br>\n"; 
+              outfile << "</div>\n"; 
               E = 0;
             };
         } else if (currow[3] == 'L') {
