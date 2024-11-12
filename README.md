@@ -26,6 +26,7 @@ add(a, b):
 As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
 <code>
+//@L Functions
 //@T Add
 //@U Description paragraph1
 //@D Description paragraph2
@@ -51,6 +52,8 @@ int add(int &a, int &b):
 **E**  stands for example (output code example within <ode tag)
 
 **X**  must be put at the end of arguments and examples block
+
+**L** stands for Line (output h1 content line)
 
 ## Usage:
 
