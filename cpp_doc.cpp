@@ -163,7 +163,6 @@ int main() {
             outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color: #2c4786;\">" + scope_tocv[cnt] + "</li></b>\n";
           };
           if (fun_tocv[cnt] != "X") {
-            std::cout << scope_tocv[cnt] << "\n";
             outfile << "<a href=\"#" + fun_tocv[cnt] + "\" style=\"margin-left:" + std::to_string(20 + 20 * depth_tocv[cnt]) + "px;\">" + fun_tocv[cnt] + "</a>\n<br>\n";
           };
         };
@@ -183,7 +182,6 @@ int main() {
               outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color: #2c4786;\">" + scope_tocv[cnt] + "</li></b>\n";
             };
             if (fun_tocv[cnt] != "X") {
-              std::cout << scope_tocv[cnt] << "\n";
               outfile << "<a href=\"#" + fun_tocv[cnt] + "\" style=\"margin-left:" + std::to_string(20 + 20 * depth_tocv[cnt]) + "px;\">" + fun_tocv[cnt] + "</a>\n<br>\n";
             };
           };
@@ -193,21 +191,6 @@ int main() {
       };
   };
   outfile.close();
-  std::cout << fun_tocv.size() << "\n";
-  for (auto t : fun_tocv) {
-    std::cout << t << " ";
-  };
-  std::cout << "\n";
-  std::cout << depth_tocv.size() << "\n";
-  for (auto t : depth_tocv) {
-    std::cout << t << " ";
-  };
-  std::cout << "\n";
-  std::cout << scope_tocv.size() << "\n";
-  for (auto t : scope_tocv) {
-    std::cout << t << " ";
-  };
-  std::cout << "\n";
   return 0;
 };
 
