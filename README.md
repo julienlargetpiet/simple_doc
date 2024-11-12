@@ -70,5 +70,5 @@ That's all.
 
 In `.bash_aliases`.
 
-`alias docu="./path_to_compiled_programm/a.out"`
+`alias docu="~/./path_to_compiled_programm/a.out"`
 
