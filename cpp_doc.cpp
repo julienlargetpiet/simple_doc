@@ -53,6 +53,7 @@ int main() {
             if (!A) {
               outfile << "<h3>#Arguments</h3><table><tr><th>Name</th><th>Definition</th></tr>\n";
               A = 1;
+              D = 0;
             };
             cur_doc = "<tr><th>";
             for (i = 4; i < n; ++i) {
