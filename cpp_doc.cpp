@@ -25,7 +25,7 @@ int main() {
   std::string cur_scope = "";
   cur_doc = "<!DOCTYPE html>\n<head>\n<title>Documentation</title>\n";
   mvec.push_back(cur_doc);
-  cur_doc = "<style>table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; }\n td, th { border: 1px solid #dddddd; text-algn: left; padding: 8px; }\n code { font-family: Consolas, \"courrier new\"; color: #ac3a3a; padding: 2px; }\n div.Div { border: 1px solid black; background-color: #f1f1f1; text-align: left; max-width: 500px; margin-left: 20px; }\n hr.hr { border: dotted 2px; }\n div.Div2 { background-color: #2c4786; text-align: center; width: 100%; padding: 0px 0px; margin: 0; color: white; top: 0px; font-size: 25px; }\n </style>\n";
+  cur_doc = "<style>table { font-family: arial, sans-serif; border-collapse: collapse; width: 50%; }\n td, th { border: 1px solid #dddddd; text-algn: left; padding: 8px; }\n code { font-family: Consolas, \"courrier new\"; color: #ac3a3a; padding: 2px; }\n div.Div { border: 1px solid black; background-color: #f1f1f1; text-align: left; width: 500px; margin-left: 20px; }\n hr.hr { border: dotted 2px; }\n div.Div2 { background-color: #2c4786; text-align: center; width: 100%; padding: 0px 0px; margin: 0; color: white; top: 0px; font-size: 25px; }\n </style>\n";
   cur_doc += "</head>\n";
   cur_doc += "<body>\n";
   mvec.push_back(cur_doc);
