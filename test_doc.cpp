@@ -3,8 +3,8 @@
 //@T add
 //@U template <typename T, typename T2> auto add(T &a, T2 &b)
 //@D Returns a + b.
-//@A x : is an int, float or double 
-//@A y : is an int, float or double
+//@A a : is an int, float or double 
+//@A b : is an int, float or double
 //@X
 //@E int a = 2;
 //@E int b = 8;
@@ -21,8 +21,8 @@ template <typename T, typename T2> auto add(T &a, T2 &b) {
 //@T subs
 //@U template <typename T, typename T2> auto subs(T &a, T2 &b)
 //@D Returns a - b.
-//@A x : is an int, float or double 
-//@A y : is an int, float or double
+//@A a : is an int, float or double 
+//@A b : is an int, float or double
 //@X
 //@E int a = 7;
 //@E int b = 4;
@@ -37,8 +37,8 @@ template <typename T, typename T2> auto subs(T &a, T2 &b) {
 //@T mult
 //@U template <typename T, typename T2> auto mult(T &a, T2 &b)
 //@D Returns a - b.
-//@A x : is an int, float or double 
-//@A y : is an int, float or double
+//@A a : is an int, float or double 
+//@A b : is an int, float or double
 //@X
 //@E int a = 7;
 //@E int b = 4;
@@ -55,8 +55,8 @@ template <typename T, typename T2> double mult(T &a, T2 &b) {
 //@T div
 //@U template <typename T, typename T2> double div(T &a, T2 &b)
 //@D Returns a / b.
-//@A x : is an int, float or double
-//@A y : is an int, float or double
+//@A a : is an int, float or double
+//@A b : is an int, float or double
 //@X
 //@E int a = 3;
 //@E int b = 2;
@@ -74,8 +74,8 @@ template <typename T, typename T2> double div(T &a, T2 &b) {
 //@T powr
 //@U template <typename T, typename T2> auto powr(T &a, T2 &b)
 //@D Returns a**b
-//@A x : is an int, float or double
-//@A y : is an int, float or double
+//@A a : is an int, float or double
+//@A b : is an int, float or double
 //@X
 //@E int a = 2;
 //@E int b = 3;
@@ -92,8 +92,8 @@ template <typename T, typename T2> auto powr(T &a, T2 &b) {
 //@T switchr
 //@U template <typename T, typename T2> void switchr(T &a, T2 &b)
 //@D Switched 2 variables of any type
-//@A x : is any type
-//@A y : is any type
+//@A a : is any type
+//@A b : is any type
 //@X
 //@E int a = 4;
 //@E int b = 1;
@@ -113,8 +113,8 @@ template <typename T, typename T2> void switchr(T &a, T2 &b) {
 //@T mean
 //@U template <typename T, typename T2> auto mean(T &a, T2 &b)
 //@D Calculates the mean of two variables of any type (float, int, double)
-//@A x : is an float, int or double
-//@A y : is an float, int or double
+//@A a : is an float, int or double
+//@A b : is an float, int or double
 //@X
 //@E int a = 5;
 //@E b = 1;
