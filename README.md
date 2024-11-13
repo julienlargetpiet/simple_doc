@@ -83,3 +83,7 @@ In `.bash_aliases`.
 
 `alias docu="~/./path_to_compiled_programm/a.out"`
 
+# Special characters
+
+In documentation make sure to replace character `<` by `&lt;` and `>` by `&gt;`.
+
