@@ -40,6 +40,7 @@ int main() {
   bool D = 0;
   bool A = 0;
   bool E = 0;
+  bool U = 0;
   while (getline(myfile, currow)) {
     n = currow.length();
     if (n > 3) {
@@ -56,11 +57,15 @@ int main() {
             cur_doc = "<h2 id=\"" + cur_doc + "\" style=\"test-align: left;\">" + cur_doc + "</h2>\n";
             mvec.push_back(cur_doc);
         } else if (currow[3] == 'U') {
-            cur_doc = "<h3>#Usage</h3>\n<div class=\"Div\"><code>";
+            if (!U) {
+              cur_doc = "<h3>#Usage</h3>\n<div class=\"Div\"><code>";
+              U = 1;
+            } else {
+              cur_doc = "<br>";
+            };
             for (i = 5; i < n; ++i) {
               cur_doc += currow[i];
             };
-          cur_doc += "</code></div><br>\n";
           mvec.push_back(cur_doc);
         } else if (currow[3] == 'D') {
             if (!D) {
@@ -110,6 +115,9 @@ int main() {
             } else if (E) {
                cur_doc = "</div>\n<br>\n<hr class=\"hr\">\n";
                E = 0;
+            } else if (U) {
+               cur_doc = "</code></div>\n";
+               U = 0;
             };
             mvec.push_back(cur_doc);
         } else if (currow[3] == 'L') {

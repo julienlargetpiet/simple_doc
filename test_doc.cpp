@@ -1,7 +1,10 @@
 #include <math.h>
 
 //@T add
-//@U template &lt;typename T, typename T2&gt; auto add(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; add(
+//@U T &a, 
+//@U T2 &b)
+//@X
 //@D Returns a + b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -20,6 +23,7 @@ template <typename T, typename T2> auto add(T &a, T2 &b) {
 
 //@T subs
 //@U template &lt;typename T, typename T2&gt; auto subs(T &a, T2 &b)
+//@X
 //@D Returns a - b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -36,6 +40,7 @@ template <typename T, typename T2> auto subs(T &a, T2 &b) {
 
 //@T mult
 //@U template &lt;typename T, typename T2&gt; auto mult(T &a, T2 &b)
+//@X
 //@D Returns a - b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -54,6 +59,7 @@ template <typename T, typename T2> double mult(T &a, T2 &b) {
 
 //@T div
 //@U template &lt;typename T, typename T2&gt; double div(T &a, T2 &b)
+//@X
 //@D Returns a / b.
 //@A a : is an int, float or double
 //@A b : is an int, float or double
@@ -73,6 +79,7 @@ template <typename T, typename T2> double div(T &a, T2 &b) {
 
 //@T powr
 //@U template &lt;typename T, typename T2&gt; auto powr(T &a, T2 &b)
+//@X
 //@D Returns a**b
 //@A a : is an int, float or double
 //@A b : is an int, float or double
@@ -91,6 +98,7 @@ template <typename T, typename T2> auto powr(T &a, T2 &b) {
 
 //@T switchr
 //@U template &lt;typename T, typename T2&gt; void switchr(T &a, T2 &b)
+//@X
 //@D Switched 2 variables of any type
 //@A a : is any type
 //@A b : is any type
@@ -112,6 +120,7 @@ template <typename T, typename T2> void switchr(T &a, T2 &b) {
 
 //@T mean
 //@U template &lt;typename T, typename T2&gt; auto mean(T &a, T2 &b)
+//@X
 //@D Calculates the mean of two variables of any type (float, int, double)
 //@A a : is an float, int or double
 //@A b : is an float, int or double
