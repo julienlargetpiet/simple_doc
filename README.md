@@ -11,6 +11,7 @@ Let's consider the file `code.py`:
 ```
 ##@T Add
 ##@U Description paragraph1
+##@X
 ##@D Description paragraph2
 ##@A x : first number to add
 ##@A y : second number to add
@@ -29,6 +30,7 @@ As you see, you must begin documentation with 2 comments characters. If it was w
 //@L1 Functions
 //@T Add
 //@U Description paragraph1
+//@X
 //@D Description paragraph2
 //@A x : first int number to add
 //@A y : second iint number to add
@@ -51,7 +53,7 @@ int add(int &a, int &b):
 
 **E**  stands for example (output code example within <ode tag)
 
-**X**  must be put at the end of arguments and examples block
+**X**  must be put at the end of **usage**, **arguments** and **examples** block
 
 **LNumber** stands for Line (output hNumber tag line) Number stands for the depth level in the table of contents
 
