@@ -1,7 +1,7 @@
 #include <math.h>
 
 //@T add
-//@U template <typename T, typename T2> auto add(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; auto add(T &a, T2 &b)
 //@D Returns a + b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -16,10 +16,10 @@ template <typename T, typename T2> auto add(T &a, T2 &b) {
   return a + b;
 };
 
-//@L0 zone1
+//@L1 zone1
 
 //@T subs
-//@U template <typename T, typename T2> auto subs(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; auto subs(T &a, T2 &b)
 //@D Returns a - b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -35,7 +35,7 @@ template <typename T, typename T2> auto subs(T &a, T2 &b) {
 };
 
 //@T mult
-//@U template <typename T, typename T2> auto mult(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; auto mult(T &a, T2 &b)
 //@D Returns a - b.
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
@@ -53,7 +53,7 @@ template <typename T, typename T2> double mult(T &a, T2 &b) {
 //@J0
 
 //@T div
-//@U template <typename T, typename T2> double div(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; double div(T &a, T2 &b)
 //@D Returns a / b.
 //@A a : is an int, float or double
 //@A b : is an int, float or double
@@ -72,7 +72,7 @@ template <typename T, typename T2> double div(T &a, T2 &b) {
 //@L2 more precision
 
 //@T powr
-//@U template <typename T, typename T2> auto powr(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; auto powr(T &a, T2 &b)
 //@D Returns a**b
 //@A a : is an int, float or double
 //@A b : is an int, float or double
@@ -87,10 +87,10 @@ template <typename T, typename T2> auto powr(T &a, T2 &b) {
   return std::pow(a, b);
 };
 
-//@L2 more precision2
+//@L3 more precision2
 
 //@T switchr
-//@U template <typename T, typename T2> void switchr(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; void switchr(T &a, T2 &b)
 //@D Switched 2 variables of any type
 //@A a : is any type
 //@A b : is any type
@@ -111,7 +111,7 @@ template <typename T, typename T2> void switchr(T &a, T2 &b) {
 //@J0
 
 //@T mean
-//@U template <typename T, typename T2> auto mean(T &a, T2 &b)
+//@U template &lt;typename T, typename T2&gt; auto mean(T &a, T2 &b)
 //@D Calculates the mean of two variables of any type (float, int, double)
 //@A a : is an float, int or double
 //@A b : is an float, int or double

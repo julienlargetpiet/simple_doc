@@ -10,7 +10,7 @@
  </style>
 </head>
 <body>
-<div class="Div2"><i><b>exemple</b></i></div><br><center><img src ="logo.jpg" width=250 height=100></center>
+<div class="Div2"><i><b>example</b></i></div><br><center><img src ="logo.jpg" width=250 height=100></center>
 <div class="Div"><a><i>Tabel Of Contents</i></a><br><br><ul>
 <a href="#add" style="margin-left:20px;">add</a>
 <br>
@@ -25,15 +25,15 @@
 <b><li style="margin-left:40px; color: #2c4786;">more precision</li></b>
 <a href="#powr" style="margin-left:60px;">powr</a>
 <br>
-<b><li style="margin-left:40px; color: #2c4786;">more precision2</li></b>
-<a href="#switchr" style="margin-left:60px;">switchr</a>
+<b><li style="margin-left:60px; color: #2c4786;">more precision2</li></b>
+<a href="#switchr" style="margin-left:80px;">switchr</a>
 <br>
 <a href="#mean" style="margin-left:20px;">mean</a>
 <br>
 </ul><br></div>
 <h2 id="add" style="test-align: left;">add</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> auto add(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; auto add(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Returns a + b.</p>
 <h3>#Arguments</h3>
@@ -53,7 +53,7 @@ a </th><th> is an int, float or double </th></tr>
 <h1 style="color:#2c4786;">zone1</h1>
 <h2 id="subs" style="test-align: left;">subs</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> auto subs(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; auto subs(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Returns a - b.</p>
 <h3>#Arguments</h3>
@@ -72,7 +72,7 @@ a </th><th> is an int, float or double </th></tr>
 <hr class="hr">
 <h2 id="mult" style="test-align: left;">mult</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> auto mult(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; auto mult(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Returns a - b.</p>
 <h3>#Arguments</h3>
@@ -91,7 +91,7 @@ a </th><th> is an int, float or double </th></tr>
 <hr class="hr">
 <h2 id="div" style="test-align: left;">div</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> double div(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; double div(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Returns a / b.</p>
 <h3>#Arguments</h3>
@@ -112,7 +112,7 @@ a </th><th> is an int, float or double</th></tr>
 <h2 style="color:#2c4786;">more precision</h2>
 <h2 id="powr" style="test-align: left;">powr</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> auto powr(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; auto powr(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Returns a**b</p>
 <h3>#Arguments</h3>
@@ -129,10 +129,10 @@ a </th><th> is an int, float or double</th></tr>
 </div>
 <br>
 <hr class="hr">
-<h2 style="color:#2c4786;">more precision2</h2>
+<h3 style="color:#2c4786;">more precision2</h3>
 <h2 id="switchr" style="test-align: left;">switchr</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> void switchr(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; void switchr(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Switched 2 variables of any type</p>
 <h3>#Arguments</h3>
@@ -152,7 +152,7 @@ a </th><th> is any type</th></tr>
 <hr class="hr">
 <h2 id="mean" style="test-align: left;">mean</h2>
 <h3>#Usage</h3>
-<div class="Div"><code>template <typename T, typename T2> auto mean(T &a, T2 &b)</code></div><br>
+<div class="Div"><code>template &lt;typename T, typename T2&gt; auto mean(T &a, T2 &b)</code></div><br>
 <h3>#Description</h3>
 <p>Calculates the mean of two variables of any type (float, int, double)</p>
 <h3>#Arguments</h3>
