@@ -217,6 +217,14 @@ int main() {
             };
             cur_doc += "\">\n</audio><br>";
             mvec.push_back(cur_doc);
+        } else if (currow[3] == 'G') {
+          t_str = currow[4];
+          cur_doc = "<h" + t_str + ">";
+          for (i = 6; i < n; ++i) {
+            cur_doc += currow[i];
+          };
+          cur_doc += "</h" + t_str + ">";
+          mvec.push_back(cur_doc);
         };
       };
     };

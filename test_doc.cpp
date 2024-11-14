@@ -1,7 +1,7 @@
 #include <math.h>
 
 //@I ghujgujgg
-//@L3 Manifesto
+//@G3 Manifesto
 //@I uyujgjgtuitggt
 //@I uytguyjgfyujhf
 //@X

@@ -79,6 +79,8 @@ int add(int &a, int &b):
 
 **F** stands for Folder (where all the medias come from)
 
+**GNumber** is for putting a h tag (won't be taken in count by the table of contents unlike **LNumber**)
+
 ## Example
 
 This repo provides a test file `test_doc.cpp` where you can find an example of how documentation is made inside a code file. 
