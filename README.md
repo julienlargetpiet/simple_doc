@@ -77,6 +77,8 @@ int add(int &a, int &b):
 
 **O** is for putting an audio file into documentation
 
+**F** stands for Folder (where all the medias come from)
+
 ## Example
 
 This repo provides a test file `test_doc.cpp` where you can find an example of how documentation is made inside a code file. 
