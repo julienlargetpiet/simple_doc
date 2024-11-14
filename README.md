@@ -71,6 +71,12 @@ int add(int &a, int &b):
 
 **I** stands for **INTRODUCTION** paragraphs
 
+**M** stands for i**M**age (put image file into documentation)
+
+**V** stands for Video (put vido file into documentation)
+
+**O** is for putting an audio file into documentation
+
 ## Example
 
 This repo provides a test file `test_doc.cpp` where you can find an example of how documentation is made inside a code file. 
