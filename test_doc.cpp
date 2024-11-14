@@ -1,5 +1,10 @@
 #include <math.h>
 
+//@I ghujgujgg
+//@I uyujgjgtuitggt
+//@I uytguyjgfyujhf
+//@X
+
 //@T add
 //@U template &lt;typename T, typename T2&gt; add(
 //@U T &a, 
@@ -106,7 +111,7 @@ template <typename T, typename T2> auto powr(T &a, T2 &b) {
 //@E int a = 4;
 //@E int b = 1;
 //@E switchr(a, b) 
-//@E std::cout << "a: " << a << " b: " << b << "\n";
+//@E std::cout &lt;&lt; "a: " &lt;&lt; a &lt;&lt; " b: " &lt;&lt; b &lt;&lt; "\n";
 //@E a: 1 b: 4
 //@X
 

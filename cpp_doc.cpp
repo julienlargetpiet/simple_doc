@@ -41,11 +41,28 @@ int main() {
   bool A = 0;
   bool E = 0;
   bool U = 0;
+  bool I = 0;
   while (getline(myfile, currow)) {
     n = currow.length();
     if (n > 3) {
       if (currow[2] == '@') {
-        if (currow[3] == 'T') {
+        if (currow[3] == 'I') {
+            if (!I) {
+              cur_doc = "<br><hr><h1><b id=\"INTRODUCTION\">INTRODUCTION:</b></h1>\n<p>";
+              fun_tocv.push_back("INTRODUCTION");
+              bool_tocv.push_back(0);
+              depth_tocv.push_back(-1);
+              scope_tocv.push_back("NOTHING");
+              I = 1;
+            } else {
+              cur_doc = "<p>";
+            };
+            for (i = 5; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+            cur_doc += "</p>";
+            mvec.push_back(cur_doc);
+        } else if (currow[3] == 'T') {
             cur_doc = "";
             for (i = 5; i < n; ++i) {
               cur_doc += currow[i];
@@ -118,6 +135,9 @@ int main() {
             } else if (U) {
                cur_doc = "</code></div>\n";
                U = 0;
+            } else if (I) {
+                cur_doc = "<br>\n<hr>\n";
+                I = 0;
             };
             mvec.push_back(cur_doc);
         } else if (currow[3] == 'L') {
