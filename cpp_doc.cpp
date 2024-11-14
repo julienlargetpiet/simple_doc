@@ -173,14 +173,16 @@ int main() {
         } else if (currow[3] == 'F') {
             cur_doc = "";
             for (i = 5; i < n; ++i) {
-              cur_doc += currow[i];
+              if (currow[i] != ' ') {
+                cur_doc += currow[i];
+              };
             };
             folder = cur_doc;
         } else if (currow[3] == 'M') {
             if (folder != " ") {
-              cur_doc = "<br>\n<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"" + folder + "/";
+              cur_doc = "<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"" + folder + "/";
             } else {
-              cur_doc = "<br>\n<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"";
+              cur_doc = "<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"";
             };
             for (i = 5; i < n; ++i) {
               if (currow[i] != ' ') {
@@ -191,9 +193,9 @@ int main() {
             mvec.push_back(cur_doc);
         } else if (currow[3] == 'V') {
             if (folder != " "){
-              cur_doc = "<br><br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"" + folder + "/";
+              cur_doc = "<br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"" + folder + "/";
             } else {
-              cur_doc = "<br><br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"";
+              cur_doc = "<br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"";
             };
             for (i = 5; i < n; ++i) {
               if (currow[i] != ' ') {
