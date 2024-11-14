@@ -9,6 +9,11 @@ C++ programm to generate a html page for functions documentation.
 Let's consider the file `code.py`:
 
 ```
+##@I introduction paragraph
+##@I introduction paragraph2
+##@I introduction paragraph3
+##@I introduction paragraph4
+
 ##@T Add
 ##@U Description paragraph1
 ##@X
@@ -27,6 +32,11 @@ add(a, b):
 As you see, you must begin documentation with 2 comments characters. If it was with a `c++` or `javascript` file, because comments are `//` (2 characters natively), the following will work.
 
 ```
+//@I introduction paragraph
+//@I introduction paragraph2
+//@I introduction paragraph3
+//@I introduction paragraph4
+
 //@L1 Functions
 //@T Add
 //@U Description paragraph1
@@ -58,6 +68,8 @@ int add(int &a, int &b):
 **LNumber** stands for Line (output hNumber tag line) Number stands for the depth level in the table of contents
 
 **JNumber** stands for Jump (switch to hNumber tag) Number stands for the depth level in the table of contents
+
+**I** stands for **INTRODUCTION** paragraphs
 
 ## Example
 
