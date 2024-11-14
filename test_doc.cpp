@@ -1,8 +1,7 @@
 #include <math.h>
 
-//@F example_doc
-
 //@I ghujgujgg
+//@L3 Manifesto
 //@I uyujgjgtuitggt
 //@I uytguyjgfyujhf
 //@X
@@ -38,6 +37,8 @@ template <typename T, typename T2> auto add(T &a, T2 &b) {
 //@U template &lt;typename T, typename T2&gt; auto subs(T &a, T2 &b)
 //@X
 //@D Returns a - b.
+//@M out.jpg
+//@D after cat
 //@A a : is an int, float or double 
 //@A b : is an int, float or double
 //@X
