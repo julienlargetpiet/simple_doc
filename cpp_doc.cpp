@@ -12,7 +12,7 @@ int main() {
   std::cin >> file;
   std::string logo = "";
   std::vector<std::string> mvec;
-  std::cout << "Path of the logo image if exists (\'N\' if it does not): ";
+  std::cout << "Full path of the logo image if exists (\'N\' if it does not): ";
   std::cin >> logo;
   std::fstream myfile(file);
   std::string currow;
@@ -35,6 +35,7 @@ int main() {
     mvec.push_back(cur_doc);
     logo_bool = 1;
   };
+  std::string folder = " ";
   int i;
   int n;
   bool D = 0;
@@ -169,7 +170,52 @@ int main() {
             } else if (cur_depth > 6) {
               cur_depth = 6;
             };
-        }; 
+        } else if (currow[3] == 'F') {
+            cur_doc = "";
+            for (i = 5; i < n; ++i) {
+              cur_doc += currow[i];
+            };
+            folder = cur_doc;
+        } else if (currow[3] == 'M') {
+            if (folder != " ") {
+              cur_doc = "<br>\n<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"" + folder + "/";
+            } else {
+              cur_doc = "<br>\n<br>\n<img style=\"margin-left: 20px;\" height=\"220\" width=\"360\" src=\"";
+            };
+            for (i = 5; i < n; ++i) {
+              if (currow[i] != ' ') {
+                cur_doc += currow[i];
+              };
+            };
+            cur_doc += "\"><br>";
+            mvec.push_back(cur_doc);
+        } else if (currow[3] == 'V') {
+            if (folder != " "){
+              cur_doc = "<br><br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"" + folder + "/";
+            } else {
+              cur_doc = "<br><br><video style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"";
+            };
+            for (i = 5; i < n; ++i) {
+              if (currow[i] != ' ') {
+                cur_doc += currow[i];
+              };
+            };
+            cur_doc += "\">\n</video><br>";
+            mvec.push_back(cur_doc);
+        } else if (currow[3] == 'O') {
+            if (folder != " "){
+              cur_doc = "<br><br><audio style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"" + folder + "/";
+            } else {
+              cur_doc = "<br><br><audio style=\"margin-left: 20px;\" height=\"220\" width=\"360\" controls>\n<source src = \"";
+            };
+            for (i = 5; i < n; ++i) {
+              if (currow[i] != ' ') {
+                cur_doc += currow[i];
+              };
+            };
+            cur_doc += "\">\n</audio><br>";
+            mvec.push_back(cur_doc);
+        };
       };
     };
   };

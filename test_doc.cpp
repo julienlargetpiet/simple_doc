@@ -1,5 +1,7 @@
 #include <math.h>
 
+//@F example_doc
+
 //@I ghujgujgg
 //@I uyujgjgtuitggt
 //@I uytguyjgfyujhf
@@ -18,6 +20,12 @@
 //@E int b = 8;
 //@E fun(a, b) 
 //@E 10
+//@M out.jpg
+//@E between 2 medias
+//@V out.mp4
+//@E after video
+//@O out.mp3
+//@E here after audio
 //@X
 
 template <typename T, typename T2> auto add(T &a, T2 &b) {
