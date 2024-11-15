@@ -241,7 +241,7 @@ int main() {
         outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
       };
       if (i == 3) {
-        outfile << "<div class=\"Div\"><a><i>Tabel Of Contents</i></a><br><br><ul>\n";
+        outfile << "<div class=\"Div\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
         for (cnt = 0; cnt < n2; ++cnt) {
           if (bool_tocv[cnt] != 0) {
             outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color: #2c4786;\">" + scope_tocv[cnt] + "</li></b>\n";
@@ -258,7 +258,7 @@ int main() {
       for (i = 0; i < sizen; ++i) {
         if (i == 2) {
           outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
-          outfile << "<div class=\"Div\"><a><i>Tabel Of Contents</i></a><br><br><ul>\n";
+          outfile << "<div class=\"Div\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
           for (cnt = 0; cnt < n2; ++cnt) {
             if (bool_tocv[cnt] != 0) {
               outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color: #2c4786;\">" + scope_tocv[cnt] + "</li></b>\n";
