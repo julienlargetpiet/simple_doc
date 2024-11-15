@@ -256,9 +256,6 @@ int main() {
     };
   } else {
       for (i = 0; i < sizen; ++i) {
-        //if (i == 1) {
-        //  outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
-        //};
         if (i == 2) {
           outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
           outfile << "<div class=\"Div\"><a><i>Tabel Of Contents</i></a><br><br><ul>\n";
