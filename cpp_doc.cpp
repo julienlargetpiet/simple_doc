@@ -36,8 +36,8 @@ int main() {
     logo_bool = 1;
   };
   std::string folder = " ";
-  int i;
-  int n;
+  unsigned int i;
+  unsigned int n;
   bool D = 0;
   bool A = 0;
   bool E = 0;
@@ -234,7 +234,7 @@ int main() {
   std::fstream outfile("out.html", std::ios::out);
   const unsigned int sizen = mvec.size();
   const unsigned int n2 = scope_tocv.size();
-  int cnt = 0;
+  unsigned int cnt = 0;
   if (logo_bool) {
     for (i = 0; i < sizen; ++i) {
       if (i == 2) {
