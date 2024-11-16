@@ -232,8 +232,8 @@ int main() {
   mvec.push_back("</body>\n\n");
   myfile.close();
   std::fstream outfile("out.html", std::ios::out);
-  const int sizen = mvec.size();
-  const int n2 = scope_tocv.size();
+  const unsigned int sizen = mvec.size();
+  const unsigned int n2 = scope_tocv.size();
   int cnt = 0;
   if (logo_bool) {
     for (i = 0; i < sizen; ++i) {
