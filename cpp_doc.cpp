@@ -140,7 +140,7 @@ int main() {
   std::string cur_scope = "";
   cur_doc = "<!DOCTYPE html>\n<head>\n<title>" + title + "</title>\n";
   mvec.push_back(cur_doc);
-  cur_doc = "<style>\ntable { border-collapse: collapse;\n width: 50%; }\n\ntd, th { border: 1px solid #dddddd;\n text-algn: left;\n padding: 8px; }\n\ncode { font-family: Consolas, \"courrier new\";\n color: " + code_color + ";\n padding: 2px; }\n\ndiv.Div { border: 1px solid black;\n background-color:" + code_background_color + ";\n text-align: left;\n width: 500px;\n margin-left: 20px;\n border-radius: 10px;\n padding: 5px; }\n\nhr.hr { border: dotted 2px; }\n\ndiv.Div2 { background-color:" + top_color + ";\n text-align: center;\n width: 100%;\n padding: 0px 0px;\n margin: 0;\n color: " + Title_color + ";\n top: 0px;\n font-size: 25px; }\n\ndiv.container { display: flex;\n gap: 25px;\n align-items: flex-start;\n box-sizing: border-box; }\n\ndiv.box1{ border: 2px solid black;\n background-color:" + toc_background_color + ";\n border-radius: 10px;\n text-align: left;\n width: 500px;\n position: sticky;\n top: 0;\n height: auto;\n overflow: visible;\n padding: 10px; }\n\ndiv.box2 { border: 2px solid black;\n background-color: " + doc_background_color + ";\n width: 100%;\n margin-right: 25px;\n border-radius: 15px;\n padding: 10px;\n }\nbody { background-color: " + background_color +";\nfont-family:" + font + ", sans-serif; }\np { color:" + font_color + "; }\n</style>\n";
+  cur_doc = "<style>\ntable { border-collapse: collapse;\n width: 100%; }\n\ntd, th { border: 1px solid #dddddd;\n text-algn: left;\n padding: 8px; }\n\ncode { font-family: Consolas, \"courrier new\";\n color: " + code_color + ";\n padding: 2px; }\n\ndiv.Div { border: 1px solid black;\n background-color:" + code_background_color + ";\n text-align: left;\n width: 500px;\n margin-left: 20px;\n border-radius: 10px;\n padding: 5px; }\n\nhr.hr { border: dotted 2px; }\n\ndiv.Div2 { background-color:" + top_color + ";\n text-align: center;\n width: 100%;\n padding: 0px 0px;\n margin: 0;\n color: " + Title_color + ";\n top: 0px;\n font-size: 25px; }\n\ndiv.container { display: flex;\n gap: 25px;\n align-items: flex-start;\n box-sizing: border-box; }\n\ndiv.box1{ border: 2px solid black;\n background-color:" + toc_background_color + ";\n border-radius: 10px;\n text-align: left;\n max-width: 500px;\n top: 0;\n height: auto;\n padding: 10px; }\n\ndiv.box2 { border: 2px solid black;\n background-color: " + doc_background_color + ";\n width: 100%;\n margin-right: 25px;\n border-radius: 15px;\n padding: 10px;\n }\nbody { background-color: " + background_color +";\nfont-family:" + font + ", sans-serif; }\np { color:" + font_color + "; }\ndiv.Divb { overflow-y: scroll;\nposition: sticky;\nmax-height: 700px;\nborder-radius: 10px;\ntop: 10px;\ntext-align: left; }\nul { margin: 0;\n padding: 0; }\n</style>\n";
   cur_doc += "</head>\n";
   cur_doc += "<body>\n";
   mvec.push_back(cur_doc);
@@ -354,7 +354,7 @@ int main() {
         outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
       };
       if (i == 3) {
-        outfile << "<div class=\"container\">\n<div class=\"box1\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
+        outfile << "<div class=\"container\">\n<div class=\"Divb\">\n<div class=\"box1\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
         for (cnt = 0; cnt < n2; ++cnt) {
           if (bool_tocv[cnt] != 0) {
             outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color: " + titles_color + ";\">" + scope_tocv[cnt] + "</li></b>\n";
@@ -363,7 +363,7 @@ int main() {
             outfile << "<a href=\"#" + fun_tocv[cnt] + "\" style=\"margin-left:" + std::to_string(20 + 20 * depth_tocv[cnt]) + "px;\">" + fun_tocv[cnt] + "</a>\n<br>\n";
           };
         };
-        outfile << "</ul><br></div>\n<div class=\"box2\">\n";
+        outfile << "</ul><br>\n</div>\n</div>\n<div class=\"box2\">\n";
       };
       outfile << mvec[i];
     };
@@ -371,7 +371,7 @@ int main() {
       for (i = 0; i < sizen; ++i) {
         if (i == 2) {
           outfile << "<div class=\"Div2\"><i><b>" + title + "</b></i></div><br>";
-          outfile << "<div class=\"container\">\n<div class=\"box1\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
+          outfile << "<div class=\"container\">\n<div class=\"Divb\">\n<div class=\"box1\"><a><i>Table Of Contents</i></a><br><br><ul>\n";
           for (cnt = 0; cnt < n2; ++cnt) {
             if (bool_tocv[cnt] != 0) {
               outfile << "<b><li style=\"margin-left:" + std::to_string(20 * depth_tocv[cnt]) + "px; color:" + titles_color + ";\">" + scope_tocv[cnt] + "</li></b>\n";
@@ -380,7 +380,7 @@ int main() {
               outfile << "<a href=\"#" + fun_tocv[cnt] + "\" style=\"margin-left:" + std::to_string(20 + 20 * depth_tocv[cnt]) + "px;\">" + fun_tocv[cnt] + "</a>\n<br>\n";
             };
           };
-          outfile << "</ul><br></div>\n<div class=\"box2\">\n";
+          outfile << "</ul><br>\n</div>\n</div>\n<div class=\"box2\">\n";
         };
         outfile << mvec[i];
       };
