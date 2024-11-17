@@ -25,7 +25,7 @@ int main() {
   std::string Title_color = "#FFFFFF";
   std::string code_background_color = "#f1f1f1";
   std::string toc_background_color = "#f1f1f1";
-  std::string doc_background_color = "#f1f1f1";
+  std::string doc_background_color = "#FFFFFF";
   std::string font = "Times New Roman";
   unsigned int n;
   unsigned int i;
