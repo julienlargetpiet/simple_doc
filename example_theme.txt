@@ -1,0 +1,10 @@
+background_color: #000000
+top_color: blue
+code_color: red
+titles_color: green
+font_color: purple
+Title_color: orange
+font: Times New Roman 
+code_background_color: grey
+toc_background_color: grey
+doc_background_color: orange
