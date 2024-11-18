@@ -117,3 +117,9 @@ In `.bash_aliases`.
 
 In documentation make sure to replace character `<` by `&lt;` and `>` by `&gt;`.
 
+# Customization and Themes
+
+Special themes can be described in text file according to the sythax of this file: `example_theme.txt`
+
+
+
