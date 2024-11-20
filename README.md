@@ -89,7 +89,7 @@ int add(int &a, int &b):
 
 This repo provides a test file `test_doc.cpp` where you can find an example of how documentation is made inside a code file. 
 
-The html associated with `test_doc.cpp` is available here: <a href="https://julienlargetpiet.tech/static/files/out.html">https://julienlargetpiet.tech/static/files/1out.html</a>
+The html associated with `test_doc.cpp` is available here: <a href="https://julienlargetpiet.tech/static/files/out.html">https://julienlargetpiet.tech/static/files/fulgurance.html</a>
 
 Also, you can run the programm on this file to see the output as `out.html` file.
 
