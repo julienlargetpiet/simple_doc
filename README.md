@@ -4,6 +4,8 @@
 
 C++ programm to generate a html page for functions documentation.
 
+The table of contents is automatically generated.
+
 ## Example
 
 Let's consider the file `code.py`:
